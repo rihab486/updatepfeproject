@@ -1,0 +1,8 @@
+<div class="card" style="width: 30rem;">
+    <h3 align="center" >Ajouter galeries pour cette image</h3>
+    <mat-progress-bar mode="buffer" *ngIf="progressBar"></mat-progress-bar>
+    <form >
+  <table class="table table-borderless">
+     <tr><td>Image</td><td><input type="file" (change)="onFileSelected($event)" class="form-control" name="name"></td></tr>
+      <tr><td colspan="2"><button class="btn btn-primary" (click)="add()">Ajouter</button></td></tr>
+ </table></form></div>
